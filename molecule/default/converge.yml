@@ -1,0 +1,9 @@
+---
+- name: Converge
+  hosts: all
+  vars:
+    vault_backend: file
+  tasks:
+    - name: "Include ansible-vault"
+      include_role:
+        name: "ansible-vault"
